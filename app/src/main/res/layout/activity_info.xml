@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".infoActivity">
+
+    //info heading
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INFORMATION ABOUT ADC"
+        android:textSize="25dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="366dp"
+        android:layout_height="657dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/adc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WHAT IS ADC?"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/adc"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/msgaboutADC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="10dp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/sample"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SAMPLE"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/msgaboutSample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/aliasing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ALIASING"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/alia"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/msgaboutAlia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/theorem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NYQUIST CRITERIA"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/msgaboutTheorem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/quantization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QUANTIZATION"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/quant"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/msgaboutQuant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/encoder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENCODER"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/msgaboutEncoder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/hold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HOLD"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/msgaboutHold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/application"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="APPLICATIONS"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/msgaboutApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
